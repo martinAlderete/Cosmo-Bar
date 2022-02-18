@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/bootstrap-grid.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../CSS/estilos.css"">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,25 +20,39 @@
     <title>Locales</title>
 </head>
 <body>
-    <div class="contenedor__locales">
-    <header id="header__locales">
-        <div class="contenedor__header">
-        <img class="header__imagen--logo" src="../assets/imagenes/logo.png">
-        <nav class="header__nav">
-            
-                <a class="header__link" href="../index.html">Inicio</a></li>
-                <a class="header__link" href ="#">Locales</a>
-                <a class="header__link" href="./noticias.html">Noticias</a>
-                <a class="header__link" href="./sobreNosotros.html">Sobre Nosotros</a>
-                <a class="header__link" href="./contacto.html">Contacto</a>
-            
-            </nav>
-            <div class="buscador">
-                <input type="text" class="buscar" placeholder="Buscar..">
-            <a href="" class="boton"><i class="fa-solid fa-magnifying-glass"></i></a>
-        </div>
-    </div>
-    </header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="../assets/imagenes/logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex ">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">LOCALES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="noticias.html">NOTICIAS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sobreNosotros.html">SOBRE NOSOTROS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">CONTACTO</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Busca aquí.." aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </header>
     <main id="main__locales">
         <div class="contenedor__titulo">
         <h1 class="main__titulo">Nuestros Locales</h1>
@@ -63,21 +79,43 @@
 </section>
     </main>
 
-    <footer id="footer__locales">
-        <div class="footer__contenedor">
-        <div class="footer__info">
-            <h3>CONTACTA CONMIGO</h3>
+    <footer id="footer__index">
+      <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <div class="footer__info">
+              <h3>CONTACTA CONMIGO</h3>
+            </div> 
+          </div>
         </div>
-        <div class="footer__redes">
-                <i class="fa-brands fa-facebook-square"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-        </div>
-        <div class="footer__copy">
-        <p>© 2022 Martin Alderete / Todos los derechos reservados</p>
+      </section>
+
+      <section class="footer__redes text-center mb-5">
+        <a href="" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+
+        <a href="" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+      </section>
+     
     </div>
-</div>
-    </footer>
-</div>
+   
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2022 Copyright:
+      <a class="text-white" href="https://github.com/martinAlderete"
+         >Martin Alderete</a
+        >
+    </div>
+  
+  </footer>
+    <script src="../js/bootstrap.js"></script>
 </body>
 </html>
