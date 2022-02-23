@@ -1,0 +1,242 @@
+
+.main{
+
+    &__titulo{
+        font-size: 4.5rem;
+        text-align: center;
+        font-family: 'Holtwood One SC', serif;
+        font-weight: normal;
+        font-style: italic;
+        color: rgb(82, 1, 1);
+    }
+    
+    &__titulo:hover{
+        animation: bounce-top 1s ease-in;
+    }
+    &__subtitulo{
+        font-size: 2.8rem;
+        font-family: 'Holtwood One SC', serif;
+        font-weight: normal;
+        font-style: italic;
+        color: rgb(93, 93, 60);
+        text-align: center;
+        background-color:#0f1110;
+        
+    }
+    &__parrafo--negrita{
+        display: inline-block;
+        font-size: 2rem;
+        font-family: 'Permanent Marker', cursive;
+        font-weight: normal;
+        font-weight: bolder;
+        color: rgb(161, 161, 160);
+        
+        
+    }
+    &__parrafo--info{
+        color: whitesmoke;
+        font-size: 1.5rem;
+    }
+    
+    &__imagen--pequeña{
+        width: 15rem;
+        height: 15rem;
+        border: 3px solid black;
+        border-radius: 50%;
+        
+        
+    }
+    &__div--blonde{
+        text-align: center;
+        background-color: #0f1110;
+    }
+&__div--brown{
+        text-align: center;
+        background-color: #0f1110;
+    }
+    &__div--ipa{
+        text-align: center;
+        background-color: #0f1110;
+    }
+
+      /*CONTACTO*/
+
+&__div--contacto{
+    text-align: center;
+    background-color:#0f1110;
+}
+&__form{
+    border-radius: px;
+    background-color:#0f1110;
+    text-align: center;
+    color: rgb(161, 161, 160);
+    font-size: 1.5rem;
+}
+&__fieldset{
+    border: none;
+    margin-top: 50px;
+}
+
+&__field{
+    padding: 20px;
+    width: 70vw;
+    background-color: white;
+    
+   
+    font-size: 1.2rem;
+    font-family:'Holtwood One SC', serif;
+    border-top: 10px solid rgb(102, 102, 101);
+}
+
+&__field:focus{
+    background: linear-gradient(to bottom, transparent, rgb(102, 102, 101) );
+    outline: none;
+}
+
+
+
+&__div--field{
+    margin: 3rem;
+    font-size: 1.2rem;
+    font-family:'Holtwood One SC', serif;
+}
+&__button{
+    padding: 20px;
+    width: 15rem;
+    font-size: 1.2rem;
+    font-family:'Holtwood One SC', serif;
+    color: rgb(102, 102, 101);
+    text-transform: uppercase;
+    overflow:hidden;
+    outline: none; 
+    transition: 0.2s;   
+}
+&__button:hover{
+   
+    border: none;
+    color: black;
+    background: #7e7474;
+    box-shadow: 0 0 10px #7e7474, 0 0 40px #7e7474, 0 0 80px #7e7474;
+}
+
+/*LOCALES*/
+
+
+&__section{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: space-between;
+}
+
+
+&__div--locales{
+ margin: 30px;  
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: space-around;
+ align-items: center;
+ 
+
+}
+
+&__parrafo--localidad{
+color: white;
+font-size: 1.2rem;
+font-family: 'Permanent Marker', cursive;
+
+
+}
+&__parrafo--direccion{
+    color: white;
+    font-size: 1.2rem;
+font-family: 'Permanent Marker', cursive;
+   
+
+   
+}
+
+
+&__img--locales{
+    width: 18.75rem;
+    height:13.75rem;
+}
+
+/*SOBRE NOSOTROS*/
+
+&__img--aboutUs{
+    width: 25rem;
+    height:40rem;
+    object-fit: cover;
+    margin: 3rem;
+    border:2px groove #7e7474 ;
+}
+&__parrafo--aboutUs{
+    font-size: 1.2rem;
+    color: whitesmoke;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+   
+   
+}
+/*NOTICIAS*/
+
+&__img--noticias{
+    display: block;
+    width: 18.75rem;
+    height:13.75rem;
+}
+&__div--noticias{
+    width: 19rem;
+    border: 2.5px solid rgb(61, 60, 60);
+    margin: 5px;
+    animation: float 3s linear infinite;  
+}
+&__subtitulo--noticias{
+    font-size: 1.5rem;
+    font-family: 'Holtwood One SC', serif;
+    font-weight: normal;
+    font-style: italic;
+    color: rgb(93, 93, 60);
+    text-align: center;
+    background-color:#0f1110;
+    
+}
+
+&__parrafo--infoNoticias{
+    color: whitesmoke;
+    font-size: 1.2rem;
+}
+
+
+}
+
+.container__img--aboutUs{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#userSex{
+    margin: 0 2rem;
+    
+}
+
+.div__container--noticias{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    
+}
+
+@keyframes float{
+    0% ,100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(-1.5rem);
+    }
+}
