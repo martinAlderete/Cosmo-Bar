@@ -25,37 +25,25 @@
         margin: 50px 50px;
     }
     
-    &__redes:hover{
-       animation: scale-down-center 1s ease-in;
-    }
 }
 
-/**
- * ----------------------------------------
- * animation scale-down-center
- * ----------------------------------------
- */
- @-webkit-keyframes scale-down-center {
-    0% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-    100% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-    }
-  }
-  @keyframes scale-down-center {
-    0% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-    100% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-    }
-  }
-  
+/*MAP REDES*/
+
+$redes:(
+twitter:#55acee,
+facebook:#3a5795,
+instagram:#E4405F
+
+);
+
+@each $red, $color in $redes{
+        .footer__redes ##{$red}:hover{
+                background-color: $color;
+        }
+
+}
+
+
 
 
 /**

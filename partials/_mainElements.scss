@@ -1,4 +1,10 @@
 
+@mixin div-info {
+    text-align: center;
+    background-color: #0f1110;
+    
+}
+
 .main{
 
     &__titulo{
@@ -47,28 +53,23 @@
         
     }
     &__div--blonde{
-        text-align: center;
-        background-color: #0f1110;
+        @include div-info;
     }
 &__div--brown{
-        text-align: center;
-        background-color: #0f1110;
+    @include div-info;
     }
     &__div--ipa{
-        text-align: center;
-        background-color: #0f1110;
+        @include div-info;
     }
 
       /*CONTACTO*/
 
 &__div--contacto{
-    text-align: center;
-    background-color:#0f1110;
+    @include div-info;
 }
 &__form{
-    border-radius: px;
-    background-color:#0f1110;
-    text-align: center;
+    border-radius: 1px;
+    @include div-info;
     color: rgb(161, 161, 160);
     font-size: 1.5rem;
 }
@@ -111,13 +112,38 @@
     outline: none; 
     transition: 0.2s;   
 }
+
+
+
 &__button:hover{
-   
     border: none;
     color: black;
     background: #7e7474;
     box-shadow: 0 0 10px #7e7474, 0 0 40px #7e7474, 0 0 80px #7e7474;
 }
+
+.button__enviar{
+@extend .main__button;
+
+&:hover{
+    background: #12bd20;
+    box-shadow: 0 0 10px #1cd12b, 0 0 40px #1cd12b, 0 0 80px #1cd12b;
+    @extend .main__button:hover
+}
+
+}
+
+
+.button__borrar{
+    @extend .main__button;
+    
+    &:hover{
+        background: #d31e1e;
+        box-shadow: 0 0 10px #c51313, 0 0 40px #c51313, 0 0 80px #c51313;
+        @extend .main__button:hover
+    }
+    
+    }
 
 /*LOCALES*/
 
