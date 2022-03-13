@@ -14,12 +14,13 @@ body{
 .navbar-brand img{
     
     height: 4rem;
-    width: 4rem;   
+    width: 4rem; 
+    
     
 }
 
 .navbar-brand img:hover{
-    animation: bounce-top 1s linear;
+    animation: bounce-top 1s ease-in;
 }
 
 
