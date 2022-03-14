@@ -5,7 +5,11 @@
 }
 
 body{
-    background-color: #0f1110;
+    background-image: url(../assets/imagenes/background-image.jpeg) !important;
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 /*MISMO HEADER PARA TODOS*/
@@ -169,7 +173,7 @@ justify-content: space-evenly
         margin: 4rem 0;
     }
     .main__subtitulo{
-        font-size: 2.45rem;
+        font-size: 1.5rem;
     }
 
     
