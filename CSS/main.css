@@ -59,11 +59,19 @@
     text-align: center; }
   .main__div--contacto {
     text-align: center;
-    background-color: #0f1110; }
+    background-image: url(../assets/imagenes/background-image.jpeg) !important;
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-attachment: fixed;
+    background-size: cover; }
   .main__form {
     border-radius: 1px;
     text-align: center;
-    background-color: #0f1110;
+    background-image: url(../assets/imagenes/background-image.jpeg) !important;
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-attachment: fixed;
+    background-size: cover;
     color: #a1a1a0;
     font-size: 1.5rem; }
   .main__fieldset {
@@ -148,6 +156,14 @@
   .main__img--locales {
     width: 18.75rem;
     height: 13.75rem; }
+    main{
+    background-image: url(../assets/imagenes/background-image.jpeg) !important;
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    }
   .main__img--aboutUs {
     width: 25rem;
     height: 40rem;
