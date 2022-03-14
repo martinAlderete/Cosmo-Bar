@@ -134,6 +134,8 @@ html, body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    border-top: 1px solid #dadada;
+    padding-top: 2rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
@@ -144,13 +146,17 @@ html, body {
         -ms-flex-align: center;
             align-items: center; }
   .main__parrafo--localidad {
-    color: white;
-    font-size: 1.2rem;
-    font-family: 'Permanent Marker', cursive; }
+    font-weight: 600;
+    font-size: 35px!important;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Holtwood One SC"; }
   .main__parrafo--direccion {
     color: white;
     font-size: 1.2rem;
-    font-family: 'Permanent Marker', cursive; }
+    font-family: "Monserrat";
+  font-size: 100%;
+font-weight:600 ; }
   .main__img--locales {
     width: 18.75rem;
     height: 13.75rem; }
