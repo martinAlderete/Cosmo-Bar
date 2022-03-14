@@ -1,1 +1,1 @@
-# MiBar
+# Cosmo-Bar
