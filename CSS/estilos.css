@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
 
 body{
     background-image: url(../assets/imagenes/background-image.jpeg) !important;
@@ -217,14 +221,14 @@ justify-content: space-evenly
     /*SOBRE NOSOTROS*/
 
     #main__aboutUs h1{
-        font-size: 1.8rem;
-        margin-top: 2rem;
+        font-size: 2rem;
+        margin-top: 3rem;
     }
     .container__info p{
-        font-size: 0.7rem;
+        font-size: 1.3rem;
     }
     .container__info h2{
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
     .main__img--aboutUs{
         width: 25rem;
